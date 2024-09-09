@@ -13,7 +13,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHei
 const helper = new THREE.AxesHelper(1);
 
 
-const cube = new THREE.Mesh(new THREE.BoxGeometry(1,1,1), new THREE.MeshBasicMaterial({color:"green"}));
+const cube = new THREE.Mesh(new THREE.BoxGeometry(0.5,0.5,0.5), new THREE.MeshBasicMaterial({color:"green"}));
 scene.add(cube);
 
 renderer.setAnimationLoop(function(){
