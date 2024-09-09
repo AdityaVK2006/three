@@ -14,7 +14,6 @@ const helper = new THREE.AxesHelper(1);
 
 
 const cube = new THREE.Mesh(new THREE.BoxGeometry(1,1,1), new THREE.MeshBasicMaterial({color:"green"}));
-cube.position.z = -1.5;
 scene.add(cube);
 
 renderer.setAnimationLoop(function(){
