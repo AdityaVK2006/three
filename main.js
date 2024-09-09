@@ -12,9 +12,9 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHei
 // camera.position.z = 5;
 const helper = new THREE.AxesHelper(1);
 
-
-const cube = new THREE.Mesh(new THREE.BoxGeometry(0.1,0.1,0.1), new THREE.MeshBasicMaterial({color:"green"}));
-scene.add(cube);
+const cone = new THREE.Mesh(new THREE.ConeGeometry(0.5,1,50), new THREE.MeshBasicMaterial({color: "yellow"}));
+cone.position.z = -1;
+scene.add(cone);
 
 renderer.setAnimationLoop(function(){
 	renderer.render( scene, camera );
