@@ -9,12 +9,12 @@ renderer.xr.enabled = true;
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,0.1,1000);
-camera.position.z = 5;
+// camera.position.z = 5;
 const helper = new THREE.AxesHelper(1);
 
 
 const cube = new THREE.Mesh(new THREE.BoxGeometry(1,1,1), new THREE.MeshBasicMaterial({color:"green"}));
-cube.position.z = -5;
+cube.position.z = -1.5;
 scene.add(cube);
 
 renderer.setAnimationLoop(function(){
