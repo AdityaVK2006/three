@@ -12,7 +12,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHei
 // camera.position.z = 5;
 const helper = new THREE.AxesHelper(1);
 
-const cone = new THREE.Mesh(new THREE.ConeGeometry(0.5,1,50), new THREE.MeshBasicMaterial({color: "yellow"}));
+const cone = new THREE.Mesh(new THREE.ConeGeometry(0.1,0.2,50), new THREE.MeshBasicMaterial({color: "yellow"}));
 cone.position.z = -1;
 scene.add(cone);
 
